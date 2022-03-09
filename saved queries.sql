@@ -11,7 +11,7 @@ SELECT books.book_id, books.title, books.genre, author.author_name
 FROM books LEFT JOIN author on books.book_id = author.author_id;
 
 
--- Displaying  the book title, genre and publication date (right join)
+-- Displaying   the book title, genre and publication date (right join)
 SELECT books.book_id, books.title, books.genre, dates.publication_date, dates.buying
 FROM books RIGHT JOIN dates on books.book_id = dates.date_id;
 
